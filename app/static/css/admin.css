@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	overflow: hidden;
 }
 
 .gestion>li>a{
@@ -8,7 +7,6 @@ body {
 	background-color: #004F8A;
 	border-radius: 5rem;
 	text-decoration: none;
-	font-size: 1.5rem;
 	padding: 0.1rem 3rem 0.1rem 3rem;
 	border-style: solid;
 	border-color: #004F8A;
@@ -28,6 +26,7 @@ body {
 	gap: 2rem;
     justify-content: center;
     margin-top: 3rem;
+    padding-left: 3rem;
 }
 
 .nomGestion{
@@ -39,3 +38,35 @@ body {
 .fichier,.user,.categorie{
     margin-bottom: 3rem;
 }    
+
+@media only screen and (max-width: 1000px) {
+    .nomGestion{
+     font-size: 400%;
+     margin-bottom: 5rem;
+    }
+    .gestion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gestion>li>a{
+        margin: 5rem;
+    }
+
+
+}
+@media only screen and (max-width: 535px) {
+    .nomGestion{
+     font-size: 100%;
+     margin-bottom: 0rem;
+    }
+    .gestion{
+        display: flex;
+        flex-wrap: wrap; 
+        margin-top: 1rem;
+        padding: 0%;
+    }
+    .gestion>li>a{
+        margin: 0rem;
+        font-size: 1rem;
+    }
+}
