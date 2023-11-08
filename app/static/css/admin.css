@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.gestion>li>a{
+	color: #FFFFFF;
+	background-color: #004F8A;
+	border-radius: 5rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 0.1rem 3rem 0.1rem 3rem;
+	border-style: solid;
+	border-color: #004F8A;
+    font-size: 2.5rem;
+    margin: 2rem;
+
+
+}
+.gestion>li>a:hover{
+	color: #004F8A;
+	background-color: #FFFFFF;
+}
+
+.gestion {
+	display: flex;
+	list-style-type: none;
+	gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.nomGestion{
+    background-color: #004F8A;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0;
+}
+.fichier,.user,.categorie{
+    margin-bottom: 3rem;
+}    

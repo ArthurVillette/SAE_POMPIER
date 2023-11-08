@@ -1,0 +1,44 @@
+<!doctype html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <meta name="admin">
+            <link rel="stylesheet" href="{{ url_for('static',filename='css/admin.css')}}">
+            <link rel="stylesheet" href="{{ url_for('static',filename='css/header.css')}}">
+            <script type="module" src="{{ url_for('static', filename='js/header.js') }}"></script>
+            <title>admin</title>
+        </head>
+        <body> 
+            {% include "components/header.html" %}
+            <main>
+                <div class="fichier">
+                <h1 class="nomGestion">Gérer fichiers</h1>
+                <ul class="gestion">
+                    <li><a href="*">Ajouter</a></li>
+                    <li><a href="*">Modifier</a></li>
+                    <li><a href="*">Supprimer</a></li>
+                </ul>
+                </div>
+                <div class="user">
+                <h1 class="nomGestion">Gérer utilisateurs</h1>
+                <ul class="gestion">
+                    <li><a href="*">Ajouter</a></li>
+                    <li><a href="*">Modifier</a></li>
+                    <li><a href="*">Supprimer</a></li>
+                </ul>
+                </div>
+                <div class="categorie">
+                <h1 class="nomGestion">Gérer catégories</h1>
+                <ul class="gestion">
+                    <li><a href="*">Ajouter</a></li>
+                    <li><a href="*">Supprimer</a></li>
+                </div>
+                <div class="role">
+                <h1 class="nomGestion">Gérer rôles</h1>
+                <ul class="gestion">
+                    <li><a href="*">Ajouter</a></li>
+                    <li><a href="*">Modifier les roles</a></li>
+                    <li><a href="*">Supprimer</a></li>
+                </div>
+            </main>
+        </body>
